@@ -26,7 +26,8 @@ public class ZakazaneUtilitiesEditor : ModuleRules
 				"Slate",
 				"SlateCore",
 				"UnrealEd",
-				"PropertyEditor"
+				"PropertyEditor",
+				"ZakazaneUtilities"
 			}
 		);
 	}

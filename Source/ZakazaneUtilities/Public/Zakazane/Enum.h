@@ -10,7 +10,6 @@
 
 namespace Zkz::Enum
 {
-
 /// @code
 /// UENUM()
 /// enum class EEnum
@@ -107,4 +106,4 @@ FString GetDisplayNameAsString(TEnumAsByte<EnumType> Value)
 	return GetDisplayNameAsString(Value.GetValue());
 }
 
-}  // namespace Zkz::Enum
+} // namespace Zkz::Enum

@@ -4,6 +4,19 @@
 
 #include "CoreMinimal.h"
 
+#include "Math.generated.h"
+
+UENUM(BlueprintType)
+enum class EZkzComparisonType : uint8
+{
+	Equals,
+	NotEquals,
+	Less,
+	LessEquals,
+	Greater,
+	GreaterEquals
+};
+
 namespace Zkz::Math
 {
 
