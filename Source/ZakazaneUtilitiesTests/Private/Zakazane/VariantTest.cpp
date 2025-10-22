@@ -1,5 +1,5 @@
 #include "Zakazane/ArrayView.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 #include "Zakazane/Variant.h"
 
 namespace Zkz::Test

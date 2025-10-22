@@ -1,4 +1,4 @@
-﻿#include "Zakazane/Test.h"
+﻿#include "Zakazane/Test/Test.h"
 #include "Zakazane/ZkzSegment.h"
 
 namespace Zkz::Segment::Test

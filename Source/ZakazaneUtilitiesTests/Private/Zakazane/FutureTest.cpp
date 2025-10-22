@@ -1,7 +1,7 @@
 #include "Algo/Transform.h"
 #include "Zakazane/Functional.h"
 #include "Zakazane/Future.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 
 namespace Zkz::Test
 {

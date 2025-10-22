@@ -1,5 +1,5 @@
 ﻿#include "Zakazane/Mask.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 
 namespace Zkz::Test
 {

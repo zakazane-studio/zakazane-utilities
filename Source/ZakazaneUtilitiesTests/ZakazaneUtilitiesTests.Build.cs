@@ -20,7 +20,8 @@ public class ZakazaneUtilitiesTests : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
-				"ZakazaneUtilities"
+				"ZakazaneUtilities",
+				"ZakazaneTestUtilities"
 			}
 		);
 	}

@@ -7,6 +7,33 @@
 #include "Algo/Find.h"
 #include "Misc/AutomationTest.h"
 
+/// Contains macros for implementing automation tests: ZKZ_BEGIN_AUTOMATION_TEST, ZKZ_ADD_TEST, ZKZ_END_AUTOMATION_TEST.
+/// 
+/// Template for implementing tests:
+/// 
+/// namespace Zkz::ModuleName::Tests
+/// {
+/// 
+/// ZKZ_BEGIN_AUTOMATION_TEST(
+///     FTestClassName,
+///     "Zakazane.ModuleName.TestClassName",
+///     EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter) // Use your own flags
+/// 
+/// ZKZ_ADD_TEST(TestName)
+/// {
+///     TestEqual("WHAT", 0, 0);
+/// }
+/// 
+/// ZKZ_ADD_TEST(AnotherTestName)
+/// {
+///     TestEqual("WHAT", 0, 1);
+/// }
+/// 
+/// ZKZ_END_AUTOMATION_TEST(FTestClassName);
+/// 
+/// } // namespace Zkz::ModuleName::Tests
+/// 
+
 // Preprocessor internals begin
 #define ZKZ_BEGIN_AUTOMATION_TEST_PRIVATE(TClass, TBaseClass, PrettyName, TFlags, FileName, LineNumber)             \
 	class TClass final : public TBaseClass                                                                          \
@@ -114,29 +141,3 @@
 	;                              \
 	TestCases.Emplace(#TestCaseName, #TestCaseName, [this]()
 #define ZKZ_END_AUTOMATION_TEST(TClass) ZKZ_END_AUTOMATION_TEST_PRIVATE(TClass)
-
-/**
- * Template for implementing tests:
- *
- * namespace Zkz::ModuleName::Tests
- * {
- *
- * ZKZ_BEGIN_AUTOMATION_TEST(
- *     FTestClassName,
- *     "Zakazane.ModuleName.TestClassName",
- *     EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter) // Use your own flags
- * 
- * ZKZ_ADD_TEST(TestName)
- * {
- *     TestEqual("WHAT", 0, 0);
- * }
- *
- * ZKZ_ADD_TEST(AnotherTestName)
- * {
- *     TestEqual("WHAT", 0, 1);
- * }
- *
- * ZKZ_END_AUTOMATION_TEST(FTestClassName);
- *
- * } // namespace Zkz::ModuleName::Tests
- */

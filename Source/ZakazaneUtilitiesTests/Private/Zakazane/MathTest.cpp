@@ -1,5 +1,5 @@
 ﻿#include "Zakazane/Math.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 
 #include <array>
 

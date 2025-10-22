@@ -1,6 +1,6 @@
 #include "Algo/Find.h"
 #include "Zakazane/ArrayView.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 
 namespace Zkz::Test
 {

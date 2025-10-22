@@ -1,7 +1,7 @@
 #include "ComponentTest.h"
 
 #include "Zakazane/Component.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 
 AComponentTestActorSuperclass::AComponentTestActorSuperclass()
 {

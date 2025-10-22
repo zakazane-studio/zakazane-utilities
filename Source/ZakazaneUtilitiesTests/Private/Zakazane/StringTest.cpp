@@ -1,5 +1,5 @@
 #include "Zakazane/String.h"
-#include "Zakazane/Test.h"
+#include "Zakazane/Test/Test.h"
 
 namespace Zkz::String::Test
 {

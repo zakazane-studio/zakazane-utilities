@@ -28,6 +28,11 @@
       "Name": "ZakazaneUtilitiesTests",
       "Type": "Editor",
       "LoadingPhase": "Default"
+    },
+    {
+      "Name": "ZakazaneTestUtilities",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
     }
   ]
 }
